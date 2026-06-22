@@ -1,0 +1,1 @@
+SELECT 'justin' AS my_first_model, '1992-05-12'::DATE AS birth_date, 100 AS salary
