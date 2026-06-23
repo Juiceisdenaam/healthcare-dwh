@@ -1,1 +1,1 @@
-SELECT 'justin' AS my_first_model, '1992-05-12'::DATE AS birth_date, 100 AS salary
+SELECT 'justin' AS my_first_model, '1992-05-12'::DATE AS birth_date, 100 AS salary, 'Crazy Guy' AS nickname, '2023-01-01'::DATE AS start_date, '2023-12-31'::DATE AS end_date
