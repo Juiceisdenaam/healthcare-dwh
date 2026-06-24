@@ -73,5 +73,5 @@ def generate_policy_number() -> str:
     return digits
 
 
-def generate_personal_id() -> int:
-    return fake.random_number(digits=9, fix_len=True)
+def generate_personal_id() -> str:
+    return str(fake.random_number(digits=9, fix_len=True))

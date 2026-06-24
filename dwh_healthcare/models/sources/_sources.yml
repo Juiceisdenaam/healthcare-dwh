@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: healthcare
+    database: postgres
+    description: This is the source for healthcare data.
+    schema: src
+    tables:
+      - name: patients
+      - name: gps
+      - name: insurances

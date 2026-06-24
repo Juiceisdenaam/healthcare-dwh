@@ -2,3 +2,20 @@
 target/
 dbt_packages/
 logs/
+
+
+# dbt artifacts (optional but recommended)
+# =========================
+manifest.json
+run_results.json
+catalog.json
+
+
+*.user
+.user.yml
+
+
+# =========================
+# Logs (extra safety)
+# =========================
+*.log
