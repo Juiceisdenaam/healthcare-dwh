@@ -1,7 +1,7 @@
 SELECT
     patient_id,
     source_system,
-    initials,
+    UPPER(TRIM(initials)) AS initials,
     UPPER(TRIM(first_name)) AS first_name,
     UPPER(TRIM({{ clean_text('middle_name') }})) as prefix,
     UPPER(TRIM(last_name)) AS last_name,
