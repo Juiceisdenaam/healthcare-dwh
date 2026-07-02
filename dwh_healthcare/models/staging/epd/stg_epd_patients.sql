@@ -10,7 +10,7 @@ SELECT
     UPPER(TRIM({{ clean_text('email') }})) as email_address,
     TRIM({{ clean_text('phone') }}) as phone_number,
     UPPER({{ clean_text('street') }}) AS street_name,
-    house_number::INTEGER AS house_number,
+    house_number AS house_number,
     UPPER(TRIM({{ clean_text('house_number_addition') }})) as house_number_addition,
     UPPER(TRIM({{ clean_text('postal_code') }})) as postal_code,
     UPPER(TRIM({{ clean_text('city') }})) as city,
