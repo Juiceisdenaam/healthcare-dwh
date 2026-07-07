@@ -23,7 +23,7 @@ WITH cleaned AS (
     registration_date,
     phone_number,
     regexp_replace(phone_number, '[^0-9]', '', 'g') as phone_digits
-  FROM {{ ref('stg_epd_patients') }}
+  FROM {{ ref('stg_epd_patients_combined') }}
 ), 
 normalized AS (
   SELECT 

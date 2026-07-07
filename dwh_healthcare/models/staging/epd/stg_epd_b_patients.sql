@@ -19,4 +19,4 @@ SELECT
     policy_number,
     personal_identification_number,
     registration_date::DATE AS registration_date
-FROM {{ source('healthcare', 'patients') }}
+FROM {{ source('healthcare', 'epd_b') }}

@@ -35,12 +35,17 @@ healthcare-dwh/
 - `main.py` remains as a thin compatibility wrapper.
 - `generators/patients.py` contains patient generation and duplicate scenarios.
 - `generators/gps.py` and `generators/insurances.py` generate source reference data.
+- `generators/providers.py` generates provider master data used by encounters and surgeries.
+- `generators/encounters.py` generates encounter source data and links surgeries into visit context.
 
 Generated source files are written to `data/raw/`:
 
 - `patients.csv`
 - `gps.csv`
 - `insurances.csv`
+- `providers.csv`
+- `surgery_cases.csv`
+- `encounters.csv`
 
 Run the generator with:
 

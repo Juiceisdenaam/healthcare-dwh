@@ -8,6 +8,7 @@
             case source_system
                 when 'EPD_A' then 1
                 when 'EPD_B' then 2
+                when 'EPD_C' then 3
                 else 99
             end
     )

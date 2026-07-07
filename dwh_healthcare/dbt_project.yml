@@ -39,5 +39,5 @@ models:
       +materialized: view
       +schema: intermediate
     analytics:
-      +materialized: table
+      +materialized: view
       +schema: analytics

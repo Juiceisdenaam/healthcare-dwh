@@ -6,6 +6,11 @@ sources:
     description: This is the source for healthcare data.
     schema: src
     tables:
-      - name: patients
+      - name: epd_a
+      - name: epd_b
+      - name: epd_c
       - name: gps
       - name: insurances
+      - name: providers
+      - name: surgery_cases
+      - name: encounters

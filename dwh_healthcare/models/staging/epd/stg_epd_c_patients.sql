@@ -1,0 +1,22 @@
+SELECT
+    patient_id,
+    source_system,
+    UPPER(TRIM(initials)) AS initials,
+    UPPER(TRIM(first_name)) AS first_name,
+    UPPER(TRIM({{ clean_text('middle_name') }})) as prefix,
+    UPPER(TRIM(last_name)) AS last_name,
+    UPPER(gender) AS gender,
+    birth_date::DATE AS birth_date,
+    UPPER(TRIM({{ clean_text('email') }})) as email_address,
+    TRIM({{ clean_text('phone') }}) as phone_number,
+    UPPER({{ clean_text('street') }}) AS street_name,
+    house_number AS house_number,
+    UPPER(TRIM({{ clean_text('house_number_addition') }})) as house_number_addition,
+    UPPER(TRIM({{ clean_text('postal_code') }})) as postal_code,
+    UPPER(TRIM({{ clean_text('city') }})) as city,
+    gp_code,
+    insurance_code,
+    policy_number,
+    personal_identification_number,
+    registration_date::DATE AS registration_date
+FROM {{ source('healthcare', 'epd_c') }}
